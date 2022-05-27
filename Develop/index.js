@@ -46,7 +46,7 @@ const questions = () => {
         message: 'How to run tests for your application?',
       },
       {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'What kind of license should your project have?',
         choices: ['none', 'MIT', 'GPLv2', 'Apache', 'GPLv3']
@@ -54,12 +54,28 @@ const questions = () => {
       {
         type: 'input',
         name: 'username',
-        message: 'What is your GitHub username?',
+        message: 'What is your GitHub username?(Required)',
+        validate: usernameInput => {
+          if (usernameInput) {
+            return true;
+          } else {
+            console.log('Please enter the username!');
+            return false;
+          }
+        }
       },
       {
         type: 'input',
         name: 'email',
-        message: 'What is your email address?',
+        message: 'What is your email address?(Required)',
+        validate: emailInput => {
+          if (emailInput) {
+            return true;
+          } else {
+            console.log('Please enter the email!');
+            return false;
+          }
+        }
       }
     ]);
   };
@@ -80,8 +96,6 @@ const writeToFile = fileContent => {
   });
 };
 module.exports = writeToFile;
-// TODO: Create a function to initialize app
-function init() {}
 
 // Function call to initialize app
 questions()
