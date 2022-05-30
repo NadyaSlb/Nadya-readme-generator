@@ -18,6 +18,7 @@
 
   ## Usage
   Open file index.js, run the command node index, answer the questions and your generated README file is ready and located in folder "dist".
+  The link to the walkthrough video is [here](https://drive.google.com/file/d/1sVKxCiXjB6Rq6_wPTaXt9v52QnfWWoiz/view).
 
   ## License
   No license added
