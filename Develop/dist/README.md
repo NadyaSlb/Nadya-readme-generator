@@ -1,9 +1,9 @@
 
-  # Nadya-readme-generator
-  ## 
+  # Readme-generator
+  ## ![GitHub license](https://img.shields.io/badge/license-MIT-blue)
 
   ## Description
-  A command-line app that helps to create professional README file.
+  A command-line app to create readme
 
   ## Table of Contents
   - [Installation](#installation)
@@ -14,19 +14,19 @@
   - [Questions](#questions)
 
   ## Installation
-  Run the commands npm init and npm install inquirer
+  Run npm init
 
   ## Usage
-  Open file index.js, run the command node index, answer the questions and your generated README file is ready and located in folder "dist".
+  Open index.js, run node index, answer the questions
 
   ## License
-  No license added
+  [MIT License](https://choosealicense.com/licenses/mit/)
 
   ## Contributing
-  Feel free to contribute.
+  Feel free to contribute
 
   ## Tests
-  Run the command npm tests.
+  npm test
 
   ## Questions
   If you have any questions you can reach me by email hoperu1986@gmail.com. 
